@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Leotta - Porque el detalle cuenta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+          background-image: url(/images/fondo-porque-el-detalle-cuenta.jpg);
+        }
+    </style>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-md" style="background:wheat;" justify-content-center>
+        <ul class="navbar-nav">
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo-redondo-porque-el-detalle-cuenta.png" alt="Logo" style="width:60px;">
+            </a>
+            <li class="nav-item p-1"><a href="index.html">inicio</a></li>
+            <li class="nav-item p-1"><a href="catalogo.html">catalogo</a></li>
+            <li class="nav-item p-1"><a href="contacto.html">contacto</a></li>
+            <li class="nav-item p-1"><a href="juegos.html">juegos</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div id="contenido_juego">
+            
+    <h3>Decoremos juntos esta torta!</h3>
+
+    <p>Veamos si tienes lo necesario para formar parte de nuestro equipo, manos a la obra!</p>
+
+    <img id="myImage" src="/images/torta.png" style="width:100px" justify-content-center>
+    <br>
+    
+    <button onclick="agregar_cubierta();">agregar cubierta de crema</button>
+    
+    <button onclick="agregar_deco();">agregar decoraciones</button>
+    
+    <button onclick="nueva_torta();">empezar de nuevo!</button>
+
+    </div>
+<footer class="text-center">Porque el Detalle Cuenta, de Mayra Leotta - desde 2012 // <a href="contacto.html">
+        contacto</a></footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    function agregar_deco()
+    {
+        document.getElementById("myImage").src="/images/torta-deco.png";
+    }
+    
+    function agregar_cubierta()
+    {
+        document.getElementById("myImage").src="/images/torta-cubierta.png";
+    }
+    function nueva_torta()
+    {
+        document.getElementById("myImage").src="/images/torta.png";
+    }
+    </script>
+</body>
+</html>
